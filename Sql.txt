@@ -1,0 +1,66 @@
+CREATE TABLE `Employee` (
+	`ID` INT(10) NOT NULL AUTO_INCREMENT,
+	`Name` VARCHAR(200) NULL DEFAULT NULL,
+	`Email` VARCHAR(200) NULL DEFAULT NULL,
+	`Phone` VARCHAR(200) NULL DEFAULT NULL,
+	`employeeCode` VARCHAR(200) NULL DEFAULT NULL,
+	PRIMARY K EY (`ID`)
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
+
+CREATE TABLE `Projetcs` (
+	`ID` INT(10) NOT NULL AUTO_INCREMENT,
+	`projectName` VARCHAR(200) NULL DEFAULT NULL,
+	`NumberEmp` VARCHAR(200) NULL DEFAULT NULL,
+	PRIMARY KEY (`ID`)
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
+insert  into employee  values (1, 'Saryna', 'ss@guvi.com', '99456789233', 'GUVI2345');
+
+insert  into employee (Name, Email, employeeCode, Phone) values ( 'Ashok', 'ashok@guvi.com', '99456789233', 'GUVI2367');
+select Name, Email from  employee;
+select * from  employee;
+
+UPDATE employee SET phone='1234567891',  employeeCode= 'GUVI56783'  WHERE  ID=3;
+delete from employee where id =5
+
+drop table employee_dummy;
+
+ALTER TABLE `employee`	ADD COLUMN `FirstName` VARCHAR(200) NULL DEFAULT NULL AFTER `Name`;
+
+Truncate table student;
+
+
+select e.Name, p.projectName, p.NumberEmp from employee as e
+ inner join  projetcs as p
+  on  e.projectId = p.ID 
+  where e.ID = 2
+  
+  
+  
+
+1 : 1 
+One Employee : One project
+Employee : Id -- PK, Project_Id  -- FK
+Projects : Id :-- PK
+
+
+
+//CRUD 
+c: Create -- create Table
+R: Read -- select
+U: Update -- Insert/update
+D : delete -- delete / Trunce/
+
+
+
+DML --- 
+DDL
