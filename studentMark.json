@@ -1,0 +1,56 @@
+[
+{
+      "name": "shruti",
+      "age": 20,
+      "marks": 30
+   
+},
+{
+     "name": "swati",
+      "age": 35,
+      "marks": 90
+   
+},
+{
+      "name": "John",
+      "age": 17,
+      "marks": 50
+   
+},
+{
+     "name": "nick",
+      "age": 27,
+      "marks": 60
+   
+},
+{
+      "name": "loki",
+      "age": 10,
+      "marks": 43
+   
+},
+{
+     "name": "groot",
+      "age": 23,
+      "marks": 70
+   
+},
+{
+      "name": "mark",
+      "age": 12,
+      "marks": 80
+   
+},
+{
+     "name": "Norman",
+      "age": 28,
+      "marks": 59
+   
+},
+{
+     "name": "Jerry",
+      "age": 24,
+      "marks": 78
+   
+}
+]

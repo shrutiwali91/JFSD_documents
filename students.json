@@ -1,0 +1,106 @@
+[
+{
+	 "id": 1,
+      "name": "Arun",
+      "sec": "A",
+      "age": 25,
+      "subject": "maths"
+   
+},
+{
+      "id": 2,
+      "name": "Ashok",
+      "sec": "B",
+      "age": 30,
+      "subject": "science"
+   
+},
+{
+      "id": 1,
+      "name": "Ashok k",
+      "sec": "A",
+      "age": 20,
+      "subject": "biology"
+   
+},
+{
+     "id": 10,
+      "name": "Sangeeta",
+      "sec": "A",
+      "age": 30,
+      "subject": "social"
+   
+},
+{
+      "id": 1,
+      "name": "leela",
+      "sec": "B",
+      "age": 30,
+      "subject": "chemistry"
+   
+},
+{
+     "id": 17,
+      "name": "Harishita",
+      "sec": "B",
+      "age": 20,
+      "subject": "english"
+   
+},
+{
+      "id": 19,
+      "name": "Arun",
+      "sec": "A",
+      "age": 10,
+      "subject": "maths"
+   
+},
+{
+      "id": 1,
+      "name": "Arun",
+      "sec": "A",
+      "age": 25,
+      "subject": "biology"
+   
+},
+{
+      "id": 28,
+      "name": "Arun",
+      "sec": "B",
+      "age": 25,
+      "subject": "english"
+   
+},
+{
+     "id": 25,
+      "name": "Arun",
+      "sec": "A",
+      "age": 25,
+      "subject": "maths"
+   
+},
+{
+      "id": 21,
+      "name": "Ashok",
+      "sec": "B",
+      "age": 20,
+      "subject": "english"
+   
+},
+{
+      "id": 1,
+      "name": "Ashok",
+      "sec": "A",
+      "age": 5,
+      "subject": "hindi"
+   
+},
+{
+     "id": 1,
+      "name": "Ashok",
+      "sec": "A",
+      "age": 12,
+      "subject": "maths"
+   
+}
+]

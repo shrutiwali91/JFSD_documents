@@ -1,0 +1,70 @@
+Cursor Query for 
+use bookstore;
+db.book.find();
+
+ db.books.find({author:'abc'}).pretty()
+ 
+ //With loop
+ var mycursor =  db.books.find({author:'abc'});
+ while(mycursor.hasNext()){
+ print(tojson(mycursor.next()));
+ }
+ 
+ //forEach
+ var mycursor = db.books.find({author:'abc'}).pretty()
+mycursor.forEach(printjson)
+ 
+ 
+ db.books.find().forEach( function( myDoc ) {
+   print( "Book name: " + myDoc.book_name )
+} )
+
+//toArray
+var myCursor = db.books.find( {author:'abc' } );
+var documentArray = myCursor.toArray();
+var myDocument = documentArray[3];
+myDocument
+
+//Count
+db.books.find().count()
+
+//limit
+db.books.find().limit(2).pretty()
+
+
+//map
+db.books.find().map( function(p) { return p.book_name; } ) ;
+var booksPrices = db.books.find().map( function(p) { return p.price * .9 } ).toArray() ;
+booksPrices
+
+========================================================================================
+Displaying the total number of students in one section only 
+db.students.aggregate([{$match:{sec:"B"}},{$count:"Total student in sec:B"}])
+
+Displaying the total number of students in both the sections and maximum age from both section
+db.students.aggregate([{$group: {_id:"$sec", total_st: {$sum:1}, max_age:{$max:"$age"} } }])
+
+
+Displaying details of students whose age is greater than 25 using match stage 
+db.students.aggregate([{$match:{age:{$gt:25}}}])
+
+
+Sorting the students on the basis of age 
+db.students.aggregate([{'$sort': {'age': 1}}])
+
+Displaying details of a student having the largest age in the section – B 
+db.students.aggregate([{$match:{sec:"B"}},{'$sort': {'age': -1}},{$limit:1}])
+
+=======================================================================
+Map Reduce
+var mapfunction = function(){emit(this.age, this.marks)}
+var reducefunction = function(key, values){return Array.sum(values)}
+db.studentsMarks.mapReduce(mapfunction, reducefunction, {'out':'Result'})
+
+======================================================
+Single Purpose Aggregation
+db.students.distinct("name")
+
+db.students.count()
+
+
